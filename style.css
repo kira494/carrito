@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarra{
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar-brand h2 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar-brand h2 {
+        font-size: 20px;
+    }
+}
+
+.carrito .btn-primary {
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.carrito .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #0b5ed7 !important; /* Un azul más oscuro */
+}
+
+/* Efecto hover para el ícono */
+.carrito .bi-cart4 {
+    transition: all 0.3s ease;
+}
+
+.carrito .btn-primary:hover .bi-cart4 {
+    transform: scale(1.1);
+}
+
+
+.vmodal{
+    width: 800px;
+}
+
+.carrito{
+    color: white;
+}
+.toastfondo{
+    background-color: aquamarine;
+}
